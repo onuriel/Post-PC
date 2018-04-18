@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/timestamp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/message"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        tools:text="1:27 pm"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Name:"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:paddingRight="5dp"/>
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/name"
+        android:layout_toRightOf="@id/name"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_centerVertical="true"
+        tools:text="Message"
+        />
+
+
+</RelativeLayout>
