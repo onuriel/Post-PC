@@ -1,6 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Relative Layout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/message_fragment_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="10dp">
 
-</Relative Layout>
+
+    <TextView
+        android:id="@+id/fragment_timestamp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_message"
+        tools:text="1:27 pm" />
+
+    <TextView
+        android:id="@+id/fragment_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textStyle="bold"
+        tools:text="Name:" />
+
+    <TextView
+        android:id="@+id/fragment_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_name"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        tools:text="Message" />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_timestamp"
+        android:text="@string/delete_button"
+         />
+    <Button
+        android:id="@+id/dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/delete_button"
+        android:text="@string/dismiss_button" />
+
+</android.support.constraint.ConstraintLayout>

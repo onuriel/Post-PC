@@ -4,4 +4,6 @@
     <string name="input_hint">Text to send</string>
     <string name="input_name">Insert Name Here</string>
     <string name="send_button">Send</string>
+    <string name="delete_button">Delete</string>
+    <string name="dismiss_button">Dismiss</string>
 </resources>
